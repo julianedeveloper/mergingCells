@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merging Cells</title>
+    <link rel="stylesheet" href="mergingCells.css">
+    <!--to merge lines you use COLSPAN, because the LINES WHEN SIDE BY SIDE occupy columns. Take a look at your table and you will notice this-->
+    <!--already to merge lines that are ONE BELLOW THE OTHER, you use ROWSPAN, because the lines will OCCUPY ONLY ONE COLUMN.-->
+    <!--
+        Colspan = lines which are side by side.
+        Rowspan = lines bellow the other.
+    -->
+</head>
+<body>
+    <!--<table> you create your table-->
+    <table>
+        <!--bellow <tr> CREATE THE LINE to you be able to fill with the content-->
+        <tr>
+            <!--in any <td> you insert the content, the data in the space of the line-->
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+            
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            
+        </tr>
+    </table>
+    
+</body>
+</html>
